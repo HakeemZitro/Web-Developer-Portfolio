@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Hakeem Ortiz, Web Developer based in Aguascalientes, Mexico">
+    <title>Hakeem Ortiz | Web Developer</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <a href="#home" class="logo">Hakeem Ortiz</a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <a href="#home" class="nav-link active" data-section="home">Inicio</a>
+                <a href="#about" class="nav-link" data-section="about">Sobre Mí</a>
+                <a href="#work" class="nav-link" data-section="work">Experiencia</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contacto</a>
+                <a href="./assets/documents/Hakeem_Ortiz_CV.pdf" download class="btn btn-primary" aria-label="Descarga Currículum">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Currículum
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="mobileNav">
+            <a href="#home" class="nav-link-mobile">Inicio</a>
+            <a href="#about" class="nav-link-mobile">Sobre Mí</a>
+            <a href="#work" class="nav-link-mobile">Experiencia</a>
+            <a href="#contact" class="nav-link-mobile">Contacto</a>
+            <a href="./assets/documents/Hakeem_Ortiz_CV.pdf" download class="btn btn-primary btn-full" aria-label="Descarga Currículum">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Currículum
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Hola, Soy <span class="gradient-text">Hakeem Ortiz</span>
+                        </h1>
+                        <h2 class="hero-subtitle">Desarrollador Web</h2>
+                        <p class="hero-description">
+                            Desarrollador Web enfocado en los detalles con 8 meses de experiencia en la creación de experiencias web visualmente llamativas y fáciles de usar.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="scrollToSection('about')">Aprende Sobre Mí</button>
+                            <button class="btn btn-outline" onclick="scrollToSection('contact')">Ponte en Contacto</button>
+                            <div class="btn-images">
+                              <a href="https://www.linkedin.com/in/hakeemortizdev/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn"><img src="./assets/images/linkedin-svgrepo-com.svg" alt="LinkedIn Logo" class="btn-image btn-image-li"></a>
+                              <a href="https://github.com/HakeemZitro" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub"><img src="./assets/images/svg_github.svg" alt="GitHub Logo" class="btn-image btn-image-gh"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./assets/images/Hakeem_Ortiz.avif" alt="Hakeem Ortiz" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-content">
+                    <h2 class="section-title">Sobre Mí</h2>
+                    
+                    <div class="about-content">
+                        <p class="about-intro">
+                          Soy un Desarrollador Web con 8 meses de experiencia en la creación de páginas web amigables con el usuario y visualmente llamativas. Tengo experiencia en la creación de páginas web estáticas y aplicaciones dinámicas con conexión a API's y bases de datos.
+                        </p>
+
+                        <div class="about-grid">
+                            <div class="card gradient-border">
+                                <h3 class="card-title">Experiencia Laboral</h3>
+                                <div class="experience-list">
+                                    <div class="experience-item">
+                                        <h4>Gestor de Patrocinadores y Actividades</h4>
+                                        <p class="text-muted">Señora Belleza Aguascalientes | 05/2023 - Actual</p>
+                                        <ul class="experience-details">
+                                            <li>Desarrollé una propuesta de página web estática para el certamen, resultando en la aprobación del proyecto
+                                            a largo plazo, ayudando a mejorar mi habilidad de negociación y mi capacidad de aprendizaje continuo.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="experience-item">
+                                        <h4>Analista de Control de Producción</h4>
+                                        <p class="text-muted">Nissan Mexicana | 04/2019 - 03/2023</p>
+                                        <ul class="experience-details">
+                                            <li>Me encargué de analizar, actualizar y crear las tablas de especificación vehicular y listado de partes,
+                                            resultando en el correcto ensamble de los vehículos, lo cual me ayudó a desarrollar la habilidad de análisis
+                                            preciso de datos y trabajo estructurado modular.</li>
+                                            <li>Lideré un equipo multidisciplinario para la re-localización de la compra de acero para la fabricación de
+                                              unidades, resultando en la correcta transición sin afectar a la producción, lo cual me ayudó a desarrollar
+                                              habilidades de liderazgo, gestión de tiempos, recursos y actividades para una correcta implementación.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card gradient-border">
+                                <h3 class="card-title">Habilidades y Educación</h3>
+                                <div class="skills-list">
+                                    <div class="skill-item">
+                                        <h4>Habilidades Técnicas</h4>
+                                        <div class="skill-img-container">
+                                          <img src="./assets/images/svg_html.svg" alt="Logo HTML" class="skill-img h">
+                                          <img src="./assets/images/svg_css.svg" alt="Logo CSS" class="skill-img h">
+                                          <img src="./assets/images/svg_javascript.svg" alt="Logo JavaScript" class="skill-img h">
+                                          <img src="./assets/images/svg_react.svg" alt="Logo React" class="skill-img w">
+                                          <img src="./assets/images/svg_node.svg" alt="Logo NodeJS" class="skill-img h">
+                                          <img src="./assets/images/svg_mongo.svg" alt="Logo MongoDB" class="skill-img h">
+                                          <img src="./assets/images/svg_git.svg" alt="Logo Git" class="skill-img h">
+                                          <img src="./assets/images/svg_github.svg" alt="Logo GitHub" class="skill-img h">
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <h4>Habilidades Generales</h4>
+                                        <p class="text-muted">Desarrollo Web Estático, Desarrollo Web Dinámico, Pensamiento Crítico, Resolución de Problemas, Adaptabilidad, Colaboración, Negociación</p>
+                                    </div>
+                                    <div class="skill-item">
+                                        <h4>Educación</h4>
+                                        <p class="text-muted">Desarrollador Web Full-Stack</p>
+                                        <p class="text-muted-sm">TripleTen LatAm Bootcamp | 05/2025 - Actual</p><br>
+                                        <p class="text-muted">Ingeniería Mecánica Automotriz</p>
+                                        <p class="text-muted-sm">Universidad Politécnica de Aguascalientes | 2014 - 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-cta">
+                            <a href="/resume.pdf" download class="btn btn-primary">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                Descarga Currículum Completo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="section work-section">
+            <div class="container">
+                <div class="section-content">
+                    <h2 class="section-title">Mis Proyectos</h2>
+                    <p class="section-description">
+                        Dale un vistazo a mis proyectos y los repositorios de GitHub.
+                    </p>
+
+                    <div class="work-featured">
+                        <div class="card gradient-border work-card">
+                            <div class="work-card-item">
+                              <img src="./assets/images/project_senorabelleza.png" class="work-card-image">
+                              <h4 class="work-card-title">Señora Belleza Aguascalientes</h4>
+                              <p class="work-card-text">Propuesta de página web estática y responsiva para certamen de belleza en Aguascalientes, utilizando funciones avanzadas de CSS.</p>
+                              <div class="work-card-technologies">
+                                <img src="./assets/images/svg_html.svg" alt="Logo HTML" class="skill-img h">
+                                <img src="./assets/images/svg_css.svg" alt="Logo CSS" class="skill-img h">
+                                <img src="./assets/images/svg_git.svg" alt="Logo Git" class="skill-img h">
+                                <a href="https://github.com/HakeemZitro/Senora-Belleza-Aguascalientes" target="_blank" rel="noopener noreferrer">
+                                  <img src="./assets/images/svg_github.svg" alt="Logo GitHub" class="skill-img h w-link">
+                                </a>
+                              </div>
+                              <a href="https://hakeemzitro.github.io/Senora-Belleza-Aguascalientes/" class="work-card-link" target="_blank" rel="noopener noreferrer">Visita la Página &#128279</a>
+                            </div>
+                            <div class="work-card-item">
+                              <img src="./assets/images/project_aroundtheworld.png" class="work-card-image">
+                              <h4 class="work-card-title">Around the World</h4>
+                              <p class="work-card-text">Página web dinámica para compartir las fotos de tus lugares favoritos, conectada una REST API con la base de datos de TripleTen.
+                              <div class="work-card-technologies">
+                                <img src="./assets/images/svg_html.svg" alt="Logo HTML" class="skill-img h">
+                                <img src="./assets/images/svg_css.svg" alt="Logo CSS" class="skill-img h">
+                                <img src="./assets/images/svg_javascript.svg" alt="Logo JavaScript" class="skill-img h">
+                                <img src="./assets/images/svg_git.svg" alt="Logo Git" class="skill-img h">
+                                <a href="https://github.com/HakeemZitro/web_project_around" target="_blank" rel="noopener noreferrer">
+                                  <img src="./assets/images/svg_github.svg" alt="Logo GitHub" class="skill-img h w-link">
+                                </a>
+                              </div>
+                              <a href="https://hakeemzitro.github.io/web_project_around/" class="work-card-link" target="_blank" rel="noopener noreferrer">Visita la Página &#128279</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-content">
+                    <h2 class="section-title">Contáctame</h2>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h3 class="contact-subtitle">Información de Contacto</h3>
+                            <div class="contact-list">
+                                <div class="contact-item">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <span>hakeem.ortizf@gmail.com</span>
+                                </div>
+                                <div class="contact-item">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Aguascalientes, México</span>
+                                </div>
+                            </div>
+
+                            <h3 class="contact-subtitle">Conecta Conmigo</h3>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/hakeemortizdev/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de LinkedIn">
+                                    <img src="./assets/images/linkedin-svgrepo-com.svg" alt="Logo de LinkedIn" class="social-img">
+                                </a>
+                                <a href="https://github.com/HakeemZitro" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de GitHub">
+                                    <img src="./assets/images/svg_github.svg" alt="Logo de GitHub" class="social-img">
+                                </a>
+                                <a href="mailto:hakeem.ortizf@gmail.com" class="social-btn" aria-label="Correo Electrónico">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-wrapper">
+                            <div class="card gradient-border">
+                                <h3 class="contact-subtitle">Envíame un Mensaje</h3>
+                                <form id="contactForm" class="contact-form">
+                                    <div class="form-group">
+                                        <label for="name">Nombre</label>
+                                        <input type="text" id="name" name="name" placeholder="Nombre" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Correo Electrónico</label>
+                                        <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Mensaje</label>
+                                        <textarea id="message" name="message" placeholder="Escribe tu mensaje" rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                        </svg>
+                                        Envía tu Mensaje
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-copyright">© <span id="currentYear"></span> Hakeem Ortiz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
